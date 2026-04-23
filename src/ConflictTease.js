@@ -13,7 +13,7 @@ export default class ConflictTease extends Phaser.Scene {
     this.add.image(640, 360, 'starfield_ct').setDisplaySize(1280, 720);
 
     // Player rocket slides in from the left
-    const rocket = this.add.image(-120, 380, 'rocket_ct').setScale(0.5);
+    const rocket = this.add.image(-120, 380, 'rocket_ct').setScale(8);
     this.tweens.add({
       targets: rocket,
       x: 260,
