@@ -22,8 +22,8 @@ export default class ConflictTease extends Phaser.Scene {
     });
 
     // Two pirate drones slide in from the right
-    const drone1 = this.add.image(1420, 190, 'pirate_ct').setScale(0.45);
-    const drone2 = this.add.image(1420, 530, 'pirate_ct').setScale(0.45);
+    const drone1 = this.add.image(1420, 190, 'pirate_ct').setScale(0.9);
+    const drone2 = this.add.image(1420, 530, 'pirate_ct').setScale(0.9);
     this.tweens.add({
       targets: [drone1, drone2],
       x: 950,
