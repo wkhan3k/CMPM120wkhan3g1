@@ -3,13 +3,20 @@ export default class StudioIntro extends Phaser.Scene {
 
   preload() {
     this.load.image('starfield', 'assets/starfield.png');
-    this.load.image('logo', 'assets/nova_drift_logo.png');
     this.load.audio('music', 'assets/music.mp3');
   }
 
   create() {
     this.add.image(640, 360, 'starfield').setDisplaySize(1280, 720);
-    this.add.image(640, 360, 'logo');
+
+    // Logotype text object
+    this.add.text(640, 360, 'NOVA DRIFT STUDIOS', {
+      fontSize: '72px',
+      fontFamily: '"Arial Black", Impact, sans-serif',
+      color: '#ffffff',
+      stroke: '#6699ff',
+      strokeThickness: 3
+    }).setOrigin(0.5);
 
     this.sound.add('music', { loop: true }).play();
 
