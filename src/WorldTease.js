@@ -27,7 +27,7 @@ export default class WorldTease extends Phaser.Scene {
     this.cameras.main.fadeIn(1500);
     this.time.delayedCall(5000, () => {
       this.cameras.main.fadeOut(1500);
-      this.time.delayedCall(1500, () => this.scene.start('MainMenu'));
+      this.time.delayedCall(1500, () => this.scene.start('ConflictTease'));
     });
   }
 }

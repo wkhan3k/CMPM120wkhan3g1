@@ -3,8 +3,9 @@
 ## How the 8 Key Requirements Are Satisfied
 
 ### 1. 3+ Scenes
-The project has three distinct Phaser.Scene classes: StudioIntro, WorldTease, 
-and MainMenu, each with a unique scene key defined in the constructor.
+The project has four distinct Phaser.Scene classes: StudioIntro, WorldTease,
+ConflictTease, and MainMenu, each with a unique scene key defined in the
+constructor. They play in sequence automatically.
 
 ### 2. 2+ Audio Assets
 - `music.mp3` — background music that plays during the studio intro, looping.
@@ -38,11 +39,12 @@ with `\n` line breaks:
 - "Lost energy cores are worth a fortune.\nBut you are not the only scavenger."
 
 ### 7. 1+ Fading Scene Transition
-Each scene uses `this.cameras.main.fadeIn` on entry and 
-`this.cameras.main.fadeOut` before transitioning to the next scene, 
-creating a fade-to-black effect between all three scenes.
+Each scene uses `this.cameras.main.fadeIn` on entry and
+`this.cameras.main.fadeOut` before transitioning to the next scene,
+creating a fade-to-black effect between all four scenes.
 
 ### 8. 1+ Object Motion Animation
-In the MainMenu scene, the player rocket slides in from the left side of 
-the screen using `this.tweens.add` animating its x position. Two pirate 
-drones also tween in from the right side of the screen.
+In the ConflictTease scene, the player rocket slides in from the left side
+of the screen using `this.tweens.add` animating its x position. Two pirate
+drones also tween in from the right side. The "Pirate drones detected." alert
+text fades in via a tween after the ships arrive.
