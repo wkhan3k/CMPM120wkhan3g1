@@ -1,7 +1,7 @@
-import StudioIntro from './StudioIntro.js?v=3';
-import WorldTease from './WorldTease.js?v=3';
-import ConflictTease from './ConflictTease.js?v=3';
-import MainMenu from './MainMenu.js?v=3';
+import StudioIntro from './StudioIntro.js?v=4';
+import WorldTease from './WorldTease.js?v=4';
+import ConflictTease from './ConflictTease.js?v=4';
+import MainMenu from './MainMenu.js?v=4';
 
 const config = {
   type: Phaser.AUTO,
